@@ -75,6 +75,16 @@ const dataSkill: Array<dataSkill> = [
       name:"Bootstrap",
       img:"https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg"
     },
+    {
+      id:15,
+      name:"Git",
+      img:"https://book.git-scm.com/images/logos/downloads/Git-Icon-1788C.svg"
+    },
+    {
+      id:16,
+      name:"Vite",
+      img:"https://upload.wikimedia.org/wikipedia/commons/f/f1/Vitejs-logo.svg"
+    },
 
 ]
 

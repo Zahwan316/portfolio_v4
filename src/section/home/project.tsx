@@ -8,9 +8,9 @@ const ProjectPageComponent = () => {
             <h4 className='font-bold text-2xl mb-2'>
               Project
             </h4>
-            <p className="text-md">Here are some recent projects I've worked on, showing my results</p>
+            <p className="text-md max-[600px]:text-center">Here are some recent projects I've worked on, showing my results</p>
         </div>
-        <div className='flex flex-wrap gap-8 justify-between'>
+        <div className='flex flex-wrap gap-16 justify-between max-[600px]:flex-col'>
           <CardProject 
             img='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2qcWPZmxTOnLYd1Q-mpAXArzs6i5cCl91xQ&s'
             title='Lorem ipsum dolor'

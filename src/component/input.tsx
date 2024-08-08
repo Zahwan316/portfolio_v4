@@ -6,6 +6,7 @@ type props = {
     inputType: "small" | "big"
     onChange: ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement>
     value: string | undefined
+    className?: string
 }
 
 const InputComponent = (props: props) => {
@@ -15,7 +16,7 @@ const InputComponent = (props: props) => {
         {
             props.inputType === "big" ?
             <textarea 
-              className={`rounded-md p-1 h-32 resize-none`}
+              className={`rounded-md p-1 h-32 resize-none ${props.className}`}
               name={props.name}
               onChange={props.onChange}
               value={props.value}
@@ -25,8 +26,9 @@ const InputComponent = (props: props) => {
              type={`${props.name === "email" ? "email" : "text"}`} 
              name={props.name} 
              onChange={props.onChange} 
-             className={`rounded-md p-1 h-10 w-1/2`}
+             className={`rounded-md p-1 h-10 w-1/2 border placeholder-blue-500 focus:border-cyan-500 transition max-[600px]:w-full ${props.className}`}
              value={props.value}
+             
              />
 
 
