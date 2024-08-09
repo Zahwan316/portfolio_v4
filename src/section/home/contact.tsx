@@ -1,8 +1,8 @@
 import { ChangeEvent, FormEvent, useEffect, useState } from "react"
 import Container from "../../component/container"
 import InputComponent from "../../component/input"
-import axios from "axios"
 import Swal from "sweetalert2"
+import Emailjs from "emailjs-com"
 
 type input = {
     from_name?:string,
@@ -10,9 +10,6 @@ type input = {
     from_email?:string
 }
 
-const api = axios.create({
-  baseURL: `${import.meta.env.VITE_API_URL}`,
-})
 
 const ContactPageComponent = () => {
   const[input,setinput] = useState<input>({from_name:"",message:"",from_email:""})
@@ -35,24 +32,18 @@ const ContactPageComponent = () => {
         return
       }
     }
-
-    const formdata = new FormData()
-    formdata.append('from_name', input.from_name || "")
-    formdata.append('from_email', input.from_email || "")
-    formdata.append('message', input.message || "")
    
     const send = async() => {
       try{
-        const res = await api.post(`sendEmail`,formdata,{
-          headers: {
-            'Content-Type': 'application/json',
-          }
+        Emailjs.send(import.meta.env.VITE_SERVICE_ID,import.meta.env.VITE_TEMPLATE_ID,input,import.meta.env.VITE_USER_ID)
+        Swal.fire({
+          text:"Email sent successfully",
+          title:"success",
+          icon:"success"
         })
-        console.log(res)
       }
       catch(e: unknown){
         const message = e instanceof Error ? e.message : "Error sending email"
-        console.log(e)
         Swal.fire({
           text:message,
           title:"error",

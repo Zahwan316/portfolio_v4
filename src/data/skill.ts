@@ -85,6 +85,16 @@ const dataSkill: Array<dataSkill> = [
       name:"Vite",
       img:"https://upload.wikimedia.org/wikipedia/commons/f/f1/Vitejs-logo.svg"
     },
+    {
+      id:17,
+      name:"HTML",
+      img:"https://www.svgrepo.com/show/303205/html-5-logo.svg"
+    },
+    {
+      id:18,
+      name:"Css",
+      img:"https://www.svgrepo.com/show/452185/css-3.svg"
+    },
 
 ]
 
