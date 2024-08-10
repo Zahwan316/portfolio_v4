@@ -23,7 +23,7 @@ const ParallaxText = ({children,baseVelocity = 100}: props) => {
   const x = useTransform(baseX,(v) => `${wrap(-20,-45,v)}%`)
 
   const directionFactor = useRef<number>(1)
-  useAnimationFrame((t,delta) => {
+  useAnimationFrame((delta) => {
     let moveBy = directionFactor.current * baseVelocity * (delta/1000)
 
     if(velocityFactor.get() < 0){
