@@ -6,12 +6,13 @@ type props = {
     inputType: "small" | "big"
     onChange: ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement>
     value: string | undefined
-    className?: string
+    className?: string,
+    delay?: number
 }
 
 const InputComponent = (props: props) => {
   return(
-    <div className='flex flex-col mb-4'>
+    <div className='flex flex-col mb-4' data-aos='fade-right' data-aos-delay={props.delay}>
         <label className='text-[#f4f4f4] font-bold text-xl mb-2'>{props.label}</label>
         {
             props.inputType === "big" ?
@@ -28,7 +29,6 @@ const InputComponent = (props: props) => {
              onChange={props.onChange} 
              className={`rounded-md p-1 h-10 w-1/2 border placeholder-blue-500 focus:border-cyan-500 transition max-[600px]:w-full ${props.className}`}
              value={props.value}
-             
              />
 
 

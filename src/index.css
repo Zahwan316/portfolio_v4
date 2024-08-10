@@ -11,6 +11,17 @@
   box-sizing: border-box
 }
 
+.textSpan{
+  font-family: "Plaster",sans-serif;
+  font-style:"normal";
+  -webkit-font-smoothing:antialiased;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color:cyan;
+  -webkit-border-radius:16px
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

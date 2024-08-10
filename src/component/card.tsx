@@ -8,11 +8,12 @@ type props = {
     className?: string,
     codeurl?: string,
     url: string,
+    delay: number
 }
 
 const CardProject = (Props:props) => {
   return(
-    <div className={`w-[24vw] h-[52vh] max-[600px]:w-full md:max-lg:w-[32vw] md:max-lg:h-[42vh] lg:max-xl:w-[40vw]  bg-[#00A9FF] hover:scale-110 rounded-md shadow-md shadow-slate-400 flex flex-col relative  transition`}>
+    <div data-aos='zoom-out' data-aos-delay={Props.delay} className={`w-[24vw] h-[52vh] max-[600px]:w-full md:max-lg:w-[32vw] md:max-lg:h-[42vh] lg:max-xl:w-[40vw]  bg-[#00A9FF] hover:scale-110 rounded-md shadow-md shadow-slate-400 flex flex-col relative  transition`}>
       <div className='w-full h-2/4'>
         <img src={Props.img} className='h-full w-full rounded-t-lg object-fill '/>
       </div>

@@ -9,7 +9,7 @@ interface props {
 
 const CardWorkExperience = (props: props) => {
   return(
-    <div className={`bg-[#00A9FF] md:max-lg:px-6 px-12 py-6 rounded-lg text-[#f9f9f9] hover:backdrop-blur-3xl hover:-translate-y-2 transition flex flex-row justify-center max-[600px]:flex-col ${props.classname}`}>
+    <div data-aos='zoom-in' className={`bg-[#00A9FF] md:max-lg:px-6 px-12 py-6 rounded-lg text-[#f9f9f9] hover:backdrop-blur-3xl hover:-translate-y-2 transition flex flex-row justify-center max-[600px]:flex-col ${props.classname}`}>
         <div className='w-32 max-[600px]:mb-8'>
             <img src={props.img} className='w-16 h-16 rounded-full relative top-2 md:max-lg:w-12 md:max-lg:h-12'/>
         </div>

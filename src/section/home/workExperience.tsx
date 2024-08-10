@@ -5,7 +5,12 @@ const WorkExperiencePageComponent = () => {
   return(
     <Container className='w-full flex flex-col'>
         <div className='w-full flex flex-col items-center mb-8'>
-            <h4 className="font-bold text-2xl mb-2">Work Experience</h4>
+            <h4 className="font-bold text-2xl mb-2 flex flex-row items-center">
+              <span className='mr-2'>
+                <img src='https://www.svgrepo.com/show/314960/work-suitcase.svg' className='w-8 h-8' />
+              </span>
+              Work Experience
+            </h4>
             <p className='text-md'>My Career Journey and Work Experience</p>
         </div>
         <div>

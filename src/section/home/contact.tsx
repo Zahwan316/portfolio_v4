@@ -66,7 +66,12 @@ const ContactPageComponent = () => {
     <div className='bg-[#89CFF3] h-[100vh] min-[1600px]:h-[70vh] py-8 flex flex-col justify-center max-[600px]:h-[80vh] md:max-lg:h-[80vh]'>
       <Container className='flex flex-col'>
         <div className='w-full flex flex-col items-center mb-8'>
-          <h4 className='font-bold text-2xl mb-2 text-[#f2f2f2]'>Contact Me</h4>
+          <h4 className='font-bold text-2xl mb-2 text-[#f2f2f2] flex items-center flex-row'>
+            <span className='mr-1'>
+              <img src='https://www.svgrepo.com/show/295343/envelope-email.svg' className='w-10 h-10' />
+            </span>
+            Contact Me
+          </h4>
           <p className='text-[#f9f9f9]'>Let's Connect and Collaborate</p>
         </div>
         <div>
@@ -77,6 +82,7 @@ const ContactPageComponent = () => {
              inputType="small"
              onChange={handleInput}
              value={input.from_name}
+             
            />
            <InputComponent 
              label="Email Address"
@@ -84,6 +90,7 @@ const ContactPageComponent = () => {
              inputType="small"
              onChange={handleInput}
              value={input.from_email}
+             delay={200}
            />
            <InputComponent 
              label="Message"
@@ -92,6 +99,7 @@ const ContactPageComponent = () => {
              onChange={handleInput}
              value={input.message}
              className='mb-8'
+             delay={400}
            />
            <button type='submit' className='bg-[#00A9FF] w-32 h-12 rounded-lg hover:bg-blue-600 text-white font-bold active:scale-75 transition'>Send</button>
           </form>
