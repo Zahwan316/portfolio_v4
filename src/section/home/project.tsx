@@ -4,7 +4,7 @@ import Project from "../../data/project"
 
 const ProjectPageComponent = () => {
   return(
-    <Container className='w-full flex flex-col '>
+    <Container className='w-full flex flex-col ' id='project'>
         <div className='flex flex-col items-center justify-center w-full mb-16 '>
             <h4 className='font-bold text-2xl mb-2 flex flex-row items-center'>
               <span className='mr-1'>

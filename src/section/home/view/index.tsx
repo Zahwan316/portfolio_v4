@@ -7,10 +7,12 @@ import SkillTextComponent from "../skill"
 import WorkExperiencePageComponent from "../workExperience"
 import ScrollComponent from "../../../component/scroll"
 import FramerParralaxTextComponent from "../framerParallaxText"
+import NavComponent from "../nav"
 
 const HomeViewPage = () => {
   return(
       <>
+      <NavComponent />
       <MainTextComponent />
       <FramerParralaxTextComponent />
       <AboutText />

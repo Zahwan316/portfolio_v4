@@ -36,6 +36,15 @@ const Project: Array<project> = [
         image:"img/poinsmkn1banjar.png",
         tech:["HTML","Css","PHP","Javascript"]
     },
+    {
+        id:4,
+        name:"Maul Putra Ampel",
+        description:"Maulputraampel is a company profile website showcasing our expertise in the rubber industry. ",
+        codeurl:"",
+        url:"https://maulputraampel.com",
+        image:"img/maulputraampel.png",
+        tech:["Wordpress"]
+    },
 ]
 
 export default Project

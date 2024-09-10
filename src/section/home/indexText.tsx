@@ -3,7 +3,7 @@ import {motion}from "framer-motion"
 
 const MainTextComponent = () => {
     return(
-          <div className='flex items-center justify-center flex-col w-full h-screen mb-8 max-[600px]:p-8' >
+          <div className='flex items-center justify-center flex-col w-full h-screen mb-8 max-[600px]:p-8' id="home">
             <motion.div
              className='absolute -top-80 -left-80 max-[600px]:-top-32 max-[600px]:-left-32 md:max-lg:-top-40 md:max-lg:-left-40 lg:max-xl:-left-52 lg:max-xl:-top-48'
              whileInView={{rotate:360}}

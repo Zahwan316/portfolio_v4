@@ -95,6 +95,11 @@ const dataSkill: Array<dataSkill> = [
       name:"Css",
       img:"https://www.svgrepo.com/show/452185/css-3.svg"
     },
+    {
+      id:18,
+      name:"Wordpress",
+      img:"https://www.svgrepo.com/show/349568/wordpress.svg"
+    },
 
 ]
 

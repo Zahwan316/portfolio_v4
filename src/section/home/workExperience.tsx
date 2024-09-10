@@ -3,7 +3,7 @@ import Container from "../../component/container"
 
 const WorkExperiencePageComponent = () => {
   return(
-    <Container className='w-full flex flex-col'>
+    <Container className='w-full flex flex-col' id='work experience'>
         <div className='w-full flex flex-col items-center mb-8'>
             <h4 className="font-bold text-2xl mb-2 flex flex-row items-center">
               <span className='mr-2'>

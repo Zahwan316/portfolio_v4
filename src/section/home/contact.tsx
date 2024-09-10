@@ -64,7 +64,7 @@ const ContactPageComponent = () => {
 
   return(
     <div className='bg-[#89CFF3] h-[100vh] min-[1600px]:h-[70vh] py-8 flex flex-col justify-center max-[600px]:h-[80vh] md:max-lg:h-[80vh]'>
-      <Container className='flex flex-col'>
+      <Container className='flex flex-col' id='contact'>
         <div className='w-full flex flex-col items-center mb-8'>
           <h4 className='font-bold text-2xl mb-2 text-[#f2f2f2] flex items-center flex-row'>
             <span className='mr-1'>
