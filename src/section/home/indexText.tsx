@@ -1,4 +1,5 @@
 import {motion}from "framer-motion"
+import Button from "../../component/button"
 
 
 const MainTextComponent = () => {
@@ -30,7 +31,7 @@ const MainTextComponent = () => {
             </motion.div>
            
            
-            <div className='flex flex-row gap-24' data-aos='fade-up'>
+            <div className='flex flex-row gap-24 mb-12' data-aos='fade-up'>
               <motion.div
                 whileInView={{rotate:360}}
                 transition={{
@@ -42,6 +43,14 @@ const MainTextComponent = () => {
                 <img src='./img/react.svg' className="w-16 h-16 hover:rotate-180 transition-all" />
               </motion.div>
                 <img src='./img/express.svg' className="w-16 h-16" />
+            </div>
+
+            <div>
+              <a href='./file/myCV.pdf' download="CV Muhammad Zahwan Sidqi">
+                <Button size="normal">
+                  Download CV
+                </Button>
+              </a>
             </div>
             
           </div>

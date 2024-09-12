@@ -5,7 +5,7 @@ import dataSkill from "../../data/skill"
 
 const SkillTextComponent = () => {
   return(
-    <div className='w-full border  bg-[#89CFF3] h-[90vh] mb-12 min-[1600px]:h-[50vh] flex flex-col justify-center max-[600px]:h-[180vh]'>
+    <div className='w-full border  bg-[#89CFF3] h-[90vh] mb-12 min-[1600px]:h-[50vh] flex flex-col justify-center max-[600px]:h-auto'>
       <Container className='py-12 flex flex-col ' id='skill'>
         <div className='mb-8 w-full flex flex-col items-center md:items-start'>
             <h4 className='font-bold text-2xl mb-2 text-[#f8f8f8] flex flex-row items-center' >
