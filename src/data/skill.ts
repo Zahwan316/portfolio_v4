@@ -78,7 +78,7 @@ const dataSkill: Array<dataSkill> = [
     {
       id:15,
       name:"Git",
-      img:"https://book.git-scm.com/images/logos/downloads/Git-Icon-1788C.svg"
+      img:"https://www.svgrepo.com/show/452210/git.svg"
     },
     {
       id:16,

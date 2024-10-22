@@ -13,7 +13,7 @@ const Project: Array<project> = [
         id:1,
         name:"Smea Perpustakaan",
         description:"This project is an online library application that allows users to borrow school library books online",
-        url:"http://smeadigital.rplsmart.com/",
+        url:"https://smeadigital.sinaukode.my.id/",
         codeurl:"https://github.com/Zahwan316/ujikom-perpustakaan",
         image:"img/smeadigital.png",
         tech:['Javascript',"React JS","Express JS","Zustand","Tailwind"]
@@ -44,6 +44,24 @@ const Project: Array<project> = [
         url:"https://maulputraampel.com",
         image:"img/maulputraampel.png",
         tech:["Wordpress"]
+    },
+    {
+        id:5,
+        name:"RPLSmart",
+        description:"A blog providing IT articles from RPL SMKN 1 Banjar, designed to share knowledge with everyone. Where I handle backend and some frontend development.",
+        codeurl:"",
+        url:"https://blog-rplsmart.vercel.app",
+        image:"img/rplsmart.PNG",
+        tech:["Laravel","Javascript"]
+    },
+    {
+        id:6,
+        name:"SmartLearn",
+        description:"An online platform that sells various courses, offering users the opportunity to enhance their skills. With my role in backend and some frontend development. ",
+        codeurl:"",
+        url:"https://smartlearn.sinaukode.my.id",
+        image:"img/smartlearn.PNG",
+        tech:["Laravel","Javascript"]
     },
 ]
 
